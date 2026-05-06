@@ -47,6 +47,11 @@
                 background:rgba(255,255,255,.04); border:1px solid var(--border);
                 padding:4px 12px; border-radius:20px; white-space:nowrap; }
     .upd-time strong { color:var(--acc2); }
+    .hdr-right { display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:flex-end; }
+    .live-clock-wrap { text-align:right; }
+    .live-clock { font-size:1.5rem; font-weight:700; color:var(--acc2);
+                  font-variant-numeric:tabular-nums; letter-spacing:.04em; line-height:1.1; }
+    .live-date  { font-size:.7rem; color:var(--sub); margin-top:2px; }
 
     /* ── Indices strip ── */
     .idx-strip { display:flex; gap:0; overflow-x:auto; border-top:1px solid var(--border);
@@ -225,7 +230,13 @@
       <div class="hdr-icon">&#128200;</div>
       <h1>台灣證券 <span>重大事件</span> 及股價波動平台</h1>
     </div>
-    <div class="upd-time">最後更新：<strong>2026年05月06日 18:01:12</strong></div>
+    <div class="hdr-right">
+      <div class="upd-time">最後更新：<strong>2026年05月06日 19:54:35</strong></div>
+      <div class="live-clock-wrap">
+        <div class="live-clock" id="lc-time">--:--:--</div>
+        <div class="live-date"  id="lc-date">載入中...</div>
+      </div>
+    </div>
   </div>
   <div class="idx-strip">
     <div class="idx-item">
@@ -273,52 +284,83 @@
       
       <div class="news-card news-red">
         <div class="news-imp-tag imp-red">🔴 最重要</div>
-        <a href="https://tw.news.yahoo.com/%E5%85%89%E9%80%9A%E8%A8%8A%E7%86%B1-%E9%81%94%E7%99%BC%E4%BC%B0%E4%BB%8A%E5%B9%B4%E5%85%A8%E5%B9%B4%E7%87%9F%E6%94%B6%E5%A2%9E%E9%80%BE3%E5%80%8D-095458921.html" target="_blank" class="news-title">光通訊熱！達發估今年全年營收增逾3倍</a>
+        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_5f07bfa5-45d0-4962-b45f-fe60a3942d6e" target="_blank" class="news-title">伊朗外長5/6訪中 是否會見習近平受矚目</a>
         <div class="news-meta">
           <span class="news-source">Yahoo Entertainment</span>
           <span class="news-time">05/05 08:00</span>
         </div>
-        <p class="news-desc">[NOWNEWS今日新聞]AI浪潮遍及各行各業，使得光通訊、低軌衛星也是近期火熱技術領域。聯發科旗下IC設計廠達發科技今（5）日舉行法說會，執行副總經理暨發言人謝孟翰表示，光通訊業務展現強勁動能，預估...</p>
+        <p class="news-desc">（中央社台北5日電）中國外交部今天宣布，伊朗外長阿拉奇（Abbas Araqchi）明天將應邀訪問中國，屆時將與中國外長王毅舉行會談。這是伊朗外長在美伊戰爭爆發後首度訪中。由於阿拉奇上週曾訪問俄羅斯並會見總統普丁，阿拉奇</p>
       </div>
 
       <div class="news-card news-red">
         <div class="news-imp-tag imp-red">🔴 最重要</div>
-        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_b1e02da7-d45d-4466-8dbc-a63e3d0214c0" target="_blank" class="news-title">5月5日 美伊戰爭對國際經濟、財經市場與民生衝擊</a>
+        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_e2db40c5-47bc-4d53-b931-7457c3414f7b" target="_blank" class="news-title">聯發科：連兩天跳空漲停鎖到底 明天再大漲恐被「抓去關」</a>
         <div class="news-meta">
           <span class="news-source">Yahoo Entertainment</span>
           <span class="news-time">05/05 08:00</span>
         </div>
-        <p class="news-desc">（中央社台北5日綜合外電報導）中東戰事持續推升燃油及機票價格，旅遊業壓力日增。而在戰爭未歇之際，強烈聖嬰現象預計將在今年年中回歸，衝擊亞洲地區，恐推升能源需求、削弱水力發電並影響農作物收成。</p>
+        <p class="news-desc">IC設計龍頭聯發科（2454）上週法說會大幅上修今年AI ASIC（客製化晶片）營收目標一倍，展望明年，基於目前已掌握的產能，非常有信心此專案將會擴大到數十億美元的規模，另一個AI加速器ASIC專案目標於明年底前進入量產</p>
       </div>
 
       <div class="news-card news-red">
         <div class="news-imp-tag imp-red">🔴 最重要</div>
-        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_f72b08b2-9dbc-4bf9-99ed-0a210cdcb65e" target="_blank" class="news-title">川普認了「突然冒出台灣超級霸權」！猛嗆聲習近平：AI領先你們</a>
+        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_ec1df918-2196-4976-a4d0-0be51f30d682" target="_blank" class="news-title">美伊開火美股跌 台股抗跌小漲創盤中、收盤新高 聯發科領漲</a>
         <div class="news-meta">
           <span class="news-source">Yahoo Entertainment</span>
           <span class="news-time">05/05 08:00</span>
         </div>
-        <p class="news-desc">政治中心／綜合報導美國總統川普（Donald Trump）於美東時間4日在白宮小型企業峰會上發表重磅演說，除了宣揚其關稅政策與18兆美元的招商政績外，更突點名台灣，爆出「突然冒出台灣超級霸權」的說法，提到晶片產業發展地位</p>
+        <p class="news-desc">【記者許麗珍／台北報導】美國與伊朗又開火，中東局勢緊張美股下跌，台股今開盤開高震盪，盤中一度最高漲至40,885.05點，刷新盤中新高紀錄，終場小漲64.15點或0.16%，收在40,769.29點，創下收盤新高紀錄。權</p>
       </div>
 
       <div class="news-card news-red">
         <div class="news-imp-tag imp-red">🔴 最重要</div>
-        <a href="https://www.techbang.com/posts/129167-meta-glasses-privacy-ai-training-leak" target="_blank" class="news-title">Meta智慧眼鏡驚爆隱私大漏洞！你的私密畫面竟成AI訓練素材，千人血汗工廠曝光！</a>
+        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_73590a7e-f988-45a2-9ec7-e62fe1a5d057" target="_blank" class="news-title">達發三大產品線發力 Q2估營收估續強 光通訊全年營收翻逾三倍！</a>
         <div class="news-meta">
-          <span class="news-source">Techbang.com</span>
+          <span class="news-source">Yahoo Entertainment</span>
           <span class="news-time">05/05 08:00</span>
         </div>
-        <p class="news-desc">Meta 智慧眼鏡捲入隱私醜聞，AI 訓練員驚見用戶極度私密畫面。這不僅揭露了 AI 發展中隱私邊界的嚴重侵犯，更引發對 AI 倫理與穿戴設備監控風險的強烈質疑。AI 光鮮亮麗的表現背後，竟隱藏著令人不寒而慄的隱私侵犯與</p>
+        <p class="news-desc">【緯來新聞網】聯發科旗下達發（6526）於今日召開法說會，宣布為反映技術趨勢，將旗下部門更名為「無線邊緣 AI」與「有線網通基礎建設」兩大事業群。受惠於有線網通出貨強勁及藍牙新品推出，達發首季營收表現亮眼，其中有線網通營</p>
       </div>
 
       <div class="news-card news-red">
         <div class="news-imp-tag imp-red">🔴 最重要</div>
-        <a href="https://www.globenewswire.com/news-release/2026/05/05/3287437/0/en/Temenos-to-power-Questrade-Financial-Group-s-everyday-banking-offering-with-Core-Banking-SaaS.html" target="_blank" class="news-title">Temenos to power Questrade Financial Group’s everyday banking offering with Core Banking SaaS</a>
+        <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-ceo-jensen-huang-says-china-should-not-have-blackwell-or-rubin-ai-gpus-firmly-states-us-should-have-the-first-the-most-and-the-best-when-it-comes-to-ai-hardware" target="_blank" class="news-title">Nvidia CEO Jensen Huang says China should not have Blackwell or Rubin AI GPUs — firmly states US should have 'the first, the most, and the best' when it comes to AI hardware</a>
         <div class="news-meta">
-          <span class="news-source">GlobeNewswire</span>
+          <span class="news-source">Tom's Hardware UK</span>
           <span class="news-time">05/05 08:00</span>
         </div>
-        <p class="news-desc">Questrade Financial Group adopts Temenos Core Banking SaaS to power Questbank, its new Canadian regulated bank</p>
+        <p class="news-desc">Nvidia's Jensen Huang reiterates that American companies should be able to ship their products globally, but m</p>
+      </div>
+
+      <div class="news-card news-red">
+        <div class="news-imp-tag imp-red">🔴 最重要</div>
+        <a href="https://slashdot.org/firehose.pl?op=view&amp;id=183131450" target="_blank" class="news-title">New frontier of AI forces Trump's heavy hand - Axios</a>
+        <div class="news-meta">
+          <span class="news-source">Slashdot.org</span>
+          <span class="news-time">05/05 08:00</span>
+        </div>
+        <p class="news-desc">New frontier of AI forces Trump's heavy handAxios White House Considers Vetting A.I. Models Before They Are Re</p>
+      </div>
+
+      <div class="news-card news-red">
+        <div class="news-imp-tag imp-red">🔴 最重要</div>
+        <a href="https://www.cartoonbrew.com/awards/view-conference-trailblazer-award-2026-260567.html" target="_blank" class="news-title">View Conference’s New Trailblazer Award Honors 15 Women From Across The Motion Picture Industry</a>
+        <div class="news-meta">
+          <span class="news-source">Cartoon Brew</span>
+          <span class="news-time">05/05 08:00</span>
+        </div>
+        <p class="news-desc">Italy's annual animation and VFX gathering will honor 15 women across directing, cinematography, production de</p>
+      </div>
+
+      <div class="news-card news-yellow">
+        <div class="news-imp-tag imp-yellow">🟡 中等</div>
+        <a href="https://www.newsmarket.com.tw/blog/237683/" target="_blank" class="news-title">EP 132：知本濕地存亡告急：守護候鳥驛站與部落領域的綠色方舟保衛戰</a>
+        <div class="news-meta">
+          <span class="news-source">Newsmarket.com.tw</span>
+          <span class="news-time">05/05 08:00</span>
+        </div>
+        <p class="news-desc">位於台東市最南端的知本濕地，是一處由東北季風漂沙形成的「沒口湖」，是國際鳥盟公認的重要棲地，守護著環頸雉、夏候鳥小燕鷗等珍貴生命，展現台東野性且純粹的自然之美。
+不過這片兩百多公頃的東海岸「綠色方舟」，命運卻極其坎坷，從</p>
       </div>
 
       <div class="news-card news-yellow">
@@ -331,194 +373,164 @@
         <p class="news-desc">前經濟部長王美花今天在論壇上透露，台積電三奈米投資計畫在2018年通過，但當時就已告訴政府Road map（規劃藍圖），需要設1奈米以下的廠，王美花說，半導體與伺服器供應鏈擴張，帶動台股有超過40家股價超過1000元，經</p>
       </div>
 
-      <div class="news-card news-yellow">
-        <div class="news-imp-tag imp-yellow">🟡 中等</div>
-        <a href="https://finance.technews.tw/2026/05/05/nikkei-jsr-plans-taiwan-plant-supply-tsmc-photoresists/" target="_blank" class="news-title">日經：JSR 擬在台設廠，供應台積電光阻劑</a>
+      <div class="news-card news-green">
+        <div class="news-imp-tag imp-green">🟢 一般</div>
+        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_d6c5bbbf-0fa4-4298-9697-c34d8d78e4d4" target="_blank" class="news-title">強化工程採購履約管理 南市府水利局辦理廉政教育訓練</a>
+        <div class="news-meta">
+          <span class="news-source">Yahoo Entertainment</span>
+          <span class="news-time">05/05 08:00</span>
+        </div>
+        <p class="news-desc">為提升工程採購品質並強化廉政風險控管能力，臺南市政府水利局5日辦理115年度「廉你都懂」廉政教育訓練，聚焦「工程採購履約管理與廉政風險控管實務」，並邀請台灣中油股份有限公司南部採購中心主任顏豪擔任講師，透過專業授課與案例</p>
+      </div>
+
+      <div class="news-card news-green">
+        <div class="news-imp-tag imp-green">🟢 一般</div>
+        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_6ad560ce-7d82-43c3-a44e-0d6ab8c7a7f0" target="_blank" class="news-title">AI養出吃電怪獸 「T公司」被國科會點名：不自己蓋電廠</a>
+        <div class="news-meta">
+          <span class="news-source">Yahoo Entertainment</span>
+          <span class="news-time">05/05 08:00</span>
+        </div>
+        <p class="news-desc">由於國內經濟隨AI半導體電子業快速發展，連帶使整體用電成長超過原先預期，經濟部上修相關電力成長預測，同時也希望能從源頭開始降低用電需求成長，台灣半導體產業就被點名應該要自建相關電廠來解決供電問題。AI用電量大增 半導體產</p>
+      </div>
+
+      <div class="news-card news-green">
+        <div class="news-imp-tag imp-green">🟢 一般</div>
+        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_b20eaf77-fcd2-4779-9124-ec06701cbdfd" target="_blank" class="news-title">QWER半年4度來台！晉升「灶咖女團」 啟動「超粉計畫」</a>
+        <div class="news-meta">
+          <span class="news-source">Yahoo Entertainment</span>
+          <span class="news-time">05/05 08:00</span>
+        </div>
+        <p class="news-desc">【記者張瑞振／台北報導】韓國新世代人氣女團 QWER 即將在 6 月 13 日 登上KKBOX風雲榜演唱會解鎖小巨蛋初體驗，半年內4度來台的她們被粉絲稱為新一代「灶咖女團」，直呼來台灣「像回到第2個家」，為回應台灣粉絲熱</p>
+      </div>
+
+      <div class="news-card news-green">
+        <div class="news-imp-tag imp-green">🟢 一般</div>
+        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_032ee37b-1847-4a4c-87ef-29be23dc8f50" target="_blank" class="news-title">卓榮泰訪台中 參訪大雅區千里眼精密部件公司</a>
+        <div class="news-meta">
+          <span class="news-source">Yahoo Entertainment</span>
+          <span class="news-time">05/05 08:00</span>
+        </div>
+        <p class="news-desc">記者徐義雄／台中報導 行政院長卓榮泰五日訪台中，參訪大雅區千里眼精密部件公司，了解企業導入AI智慧製造、提升製程效率，跨足半導體、航太、醫療、機器人及軍工產業等轉型成果。 卓榮泰由立委蔡其昌、何欣純等人陪同參觀千里眼精密</p>
+      </div>
+
+      <div class="news-card news-green">
+        <div class="news-imp-tag imp-green">🟢 一般</div>
+        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_c421008e-a5a3-434c-ac4b-f6c980cfdd36" target="_blank" class="news-title">台股再創高 新台幣震盪升0.5分收31.605元</a>
+        <div class="news-meta">
+          <span class="news-source">Yahoo Entertainment</span>
+          <span class="news-time">05/05 08:00</span>
+        </div>
+        <p class="news-desc">（中央社記者趙敏雅台北5日電）中東局勢再度升溫，全球金融市場觀望氣氛轉濃，台灣股匯同步震盪，台股終場以40769.29點作收，再創收盤新高；新台幣盤中升貶互見，上下震盪1.1角，收盤收31.605元，升0.5分，台北及元</p>
+      </div>
+
+      <div class="news-card news-green">
+        <div class="news-imp-tag imp-green">🟢 一般</div>
+        <a href="https://tw.sports.yahoo.com/news/%E6%B0%B4%E4%B9%8B%E5%91%BC%E5%90%B8-%E9%AB%98%E4%B8%AD%E5%A5%B3%E7%90%83%E5%93%A1%E7%9B%9C%E5%A3%98-%E6%BB%91%E5%87%BA%E6%B0%B4%E9%BE%8D%E5%BD%88-%E5%B0%8D%E6%89%8B%E6%BB%BF%E8%87%89%E5%85%A8%E6%BF%95-%E7%B6%B2%E9%A9%9A-103524651.html" target="_blank" class="news-title">水之呼吸！高中女球員盜壘「滑出水龍彈」對手滿臉全濕 網驚：怎解？</a>
+        <div class="news-meta">
+          <span class="news-source">Yahoo Entertainment</span>
+          <span class="news-time">05/05 08:00</span>
+        </div>
+        <p class="news-desc">體育中心／黃崇超報導114學年度高中棒球運動聯賽硬式女子組六強複賽，埔里高工今天（5日）迎戰南崁高中，在室外球場遇到下雨的情況，比賽進行到五局下半，埔里高工捕手在一壘有人時遇到盜壘、接捕後傳二壘嘗試阻殺，正當埔里游擊手進</p>
+      </div>
+
+      <div class="news-card news-green">
+        <div class="news-imp-tag imp-green">🟢 一般</div>
+        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_2bcb6197-6037-4422-89b9-9a755a203b0d" target="_blank" class="news-title">台灣醫衛外交深耕印尼泗水 駐處辦國際醫療研討會</a>
+        <div class="news-meta">
+          <span class="news-source">Yahoo Entertainment</span>
+          <span class="news-time">05/05 08:00</span>
+        </div>
+        <p class="news-desc">（中央社記者羅薇佳雅加達5日專電）台灣積極發揮醫衛外交影響力，駐泗水辦事處今天舉行「國際醫療研討會」，串聯美、日、澳等多國醫衛單位，分享癌症療護與智慧醫療經驗，吸引超過300名醫界主管參與。</p>
+      </div>
+
+      <div class="news-card news-green">
+        <div class="news-imp-tag imp-green">🟢 一般</div>
+        <a href="https://tw.news.yahoo.com/%E5%8F%B0%E5%8D%97%E6%93%B4%E5%A4%A7%E5%86%8D%E7%94%9F%E6%B0%B4%E5%BB%BA%E8%A8%AD-%E9%A0%90%E8%A8%88%E6%98%8E%E5%B9%B4%E8%B5%B7%E6%AF%8F%E6%97%A5%E4%BE%9B%E6%87%89%E9%87%8F%E9%81%948-8%E8%90%AC%E5%99%B8-102038151.html" target="_blank" class="news-title">台南擴大再生水建設 預計明年起每日供應量達8.8萬噸</a>
+        <div class="news-meta">
+          <span class="news-source">Yahoo Entertainment</span>
+          <span class="news-time">05/05 08:00</span>
+        </div>
+        <p class="news-desc">台南市持續推動再生水建設，強化產業用水韌性。市府水利局今（5）日於市政會議專案報告指出，目前全市每日再生水供應量已達6.1萬噸，為全台最多，未來將持續擴充供水量，預計116年提升至8.8萬噸、132年可達17.5萬噸，支</p>
+      </div>
+
+      <div class="news-card news-green">
+        <div class="news-imp-tag imp-green">🟢 一般</div>
+        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_052c023e-5586-47ae-ba9b-a1beb537dedc" target="_blank" class="news-title">博士生物科技公司捐贈百萬助聽器 嘉惠屏東弱勢聽損民眾</a>
+        <div class="news-meta">
+          <span class="news-source">Yahoo Entertainment</span>
+          <span class="news-time">05/05 08:00</span>
+        </div>
+        <p class="news-desc">記者毛莉／屏東報導 博士生物科技股份有限公司發起「迎向陽光．聽見希望」公益捐贈計畫，五日捐贈屏東縣府二十台、市值約一百萬元助聽器，期盼讓弱勢聽損民眾重新聽見希望。 博士生物科技公司總經理鄭淑貞表示，博士助聽器深耕台灣多年</p>
+      </div>
+
+      <div class="news-card news-green">
+        <div class="news-imp-tag imp-green">🟢 一般</div>
+        <a href="https://tw.stock.yahoo.com/news/%E5%8F%B0%E8%82%A1%E6%8C%87%E6%95%B8-%E5%BA%A6%E7%99%BB40885%E9%BB%9E%E5%BE%8C%E7%BF%BB%E9%BB%91-%E5%8F%B0%E7%A9%8D%E9%9B%BB%E5%B0%8F%E8%B7%8C%E5%86%8D%E5%90%B8%E5%B0%8F%E8%B3%87%E6%97%8F%E9%80%B2%E5%A0%B4-100606402.html" target="_blank" class="news-title">台股指數一度登40885點後翻黑 台積電小跌再吸小資族進場</a>
+        <div class="news-meta">
+          <span class="news-source">Yahoo Entertainment</span>
+          <span class="news-time">05/05 08:00</span>
+        </div>
+        <p class="news-desc">財經中心／陳致帆、李澤民 台北報導昨天台股收盤站穩四萬點大關，還創下史上最大漲點紀錄，今天台股以40708點開出，股價一度衝上40885點，主要由聯發科帶動漲勢，連續兩天亮燈漲停鎖死，不過台積電出現小跌，反而吸引小資族零</p>
+      </div>
+
+      <div class="news-card news-green">
+        <div class="news-imp-tag imp-green">🟢 一般</div>
+        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_fdcf8a2e-a767-44f3-8f82-59e1f5e6f632" target="_blank" class="news-title">衛武營50檔節目齊發 連結土地與世界共鳴</a>
+        <div class="news-meta">
+          <span class="news-source">Yahoo Entertainment</span>
+          <span class="news-time">05/05 08:00</span>
+        </div>
+        <p class="news-desc">記者黃朝琴／綜合報導 衛武營今（5）日公布2026年下半年節目，藝術總監簡文彬表示，即將推出近50檔，包含爵士週、管風琴音樂節、Open House、臺灣舞蹈平台、衛武營小時光等品牌節目，還推出威爾第《遊唱詩人》獨家新版</p>
+      </div>
+
+      <div class="news-card news-green">
+        <div class="news-imp-tag imp-green">🟢 一般</div>
+        <a href="https://finance.technews.tw/2026/05/05/semi-southeast-asia-expand-semiconductor-production-industry-diversification-risk-reduction/" target="_blank" class="news-title">SEMI：東南亞應擴張半導體生產，以利產業分散降風險</a>
         <div class="news-meta">
           <span class="news-source">Technews.tw</span>
           <span class="news-time">05/05 08:00</span>
         </div>
-        <p class="news-desc">日本半導體材料大廠 JSR 計畫在台灣興建首座生產基地，直接供應台積電光阻劑。全球競爭加劇、中國業者急起直追之際，日本材料大廠也積極深化與指標性客戶合作，以鞏固市場地位。 《日經亞洲》（Nikkei Asia）報導，目前</p>
-      </div>
-
-      <div class="news-card news-yellow">
-        <div class="news-imp-tag imp-yellow">🟡 中等</div>
-        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_bd4bfd17-7f77-4fb9-95ef-4def32a6d92f" target="_blank" class="news-title">陪同總統出訪史瓦帝尼 林佳龍：外交是專業與團隊累積</a>
-        <div class="news-meta">
-          <span class="news-source">Yahoo Entertainment</span>
-          <span class="news-time">05/05 08:00</span>
-        </div>
-        <p class="news-desc">（中央社記者楊堯茹台北5日電）總統賴清德今天自史瓦帝尼返台，陪同的外交部長林佳龍表示，此行展現史王與史國政府對兩國邦誼的高度重視。他也強調，外交工作的背後，是專業與團隊合作的累積，每一個細節、每一次協調、每一段溝通，都是</p>
-      </div>
-
-      <div class="news-card news-yellow">
-        <div class="news-imp-tag imp-yellow">🟡 中等</div>
-        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_b2564c2a-7279-49f8-b4eb-a007b47a2cee" target="_blank" class="news-title">憂國防預算僵局衝擊軍工供應鏈 何欣純：預算不只是國安、更是地方產業機會</a>
-        <div class="news-meta">
-          <span class="news-source">Yahoo Entertainment</span>
-          <span class="news-time">05/05 08:00</span>
-        </div>
-        <p class="news-desc">行政院長卓榮泰今（5）日訪台中市，參訪位於大雅區的千里眼精密部件股份有限公司，了解企業導入AI智慧製造、提升製程效率，並跨足半導體、航太、醫療、機器人及軍工產業等轉型成果。台中市長候選人、立委何欣純出席致詞表示，台中未來</p>
-      </div>
-
-      <div class="news-card news-yellow">
-        <div class="news-imp-tag imp-yellow">🟡 中等</div>
-        <a href="https://finance.technews.tw/2026/05/05/psi-8028-202604-financial-report/" target="_blank" class="news-title">昇陽半導體4月營收4.65 億元</a>
-        <div class="news-meta">
-          <span class="news-source">Technews.tw</span>
-          <span class="news-time">05/05 08:00</span>
-        </div>
-        <p class="news-desc">昇陽半導體（8028）今（5）日公布 4 月營收，達 4.65 億元，較 3 月成長 -2.0%，較去年同期成長 31.1%，累計前 4 月營收為 17.69 億元，年增 23.1%。</p>
-      </div>
-
-      <div class="news-card news-yellow">
-        <div class="news-imp-tag imp-yellow">🟡 中等</div>
-        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_92ec9d04-efbb-482c-a69a-54d04223684a" target="_blank" class="news-title">第一季對中國營收仍是0！黃仁勳再籲放寬晶片管制：將錯失機會</a>
-        <div class="news-meta">
-          <span class="news-source">Yahoo Entertainment</span>
-          <span class="news-time">05/05 08:00</span>
-        </div>
-        <p class="news-desc">[Newtalk新聞] 《Yahoo Finance》報導，美國晶片大廠輝達（NVIDIA）執行長黃仁勳（Jensen Huang）近日表示，由於美國出口管制與中國市場環境變化，公司在中國的市占率已降到「零」。 黃仁勳上</p>
-      </div>
-
-      <div class="news-card news-yellow">
-        <div class="news-imp-tag imp-yellow">🟡 中等</div>
-        <a href="https://www.globenewswire.com/news-release/2026/05/05/3287427/0/en/KBR-Reports-First-Quarter-Fiscal-2026-Results.html" target="_blank" class="news-title">KBR Reports First Quarter Fiscal 2026 Results</a>
-        <div class="news-meta">
-          <span class="news-source">GlobeNewswire</span>
-          <span class="news-time">05/05 08:00</span>
-        </div>
-        <p class="news-desc">First Quarter Fiscal 2026 Results  (All comparisons against the first quarter fiscal 2025 unless noted.)  Reve</p>
-      </div>
-
-      <div class="news-card news-yellow">
-        <div class="news-imp-tag imp-yellow">🟡 中等</div>
-        <a href="https://www.globenewswire.com/news-release/2026/05/05/3287436/0/en/Fortrea-Reports-First-Quarter-2026-Results.html" target="_blank" class="news-title">Fortrea Reports First Quarter 2026 Results</a>
-        <div class="news-meta">
-          <span class="news-source">GlobeNewswire</span>
-          <span class="news-time">05/05 08:00</span>
-        </div>
-        <p class="news-desc">Strong first-quarter performance reinforces confidence in FY 2026 guidanceBook-to-bill of 1.15x is third conse</p>
+        <p class="news-desc">國際半導體產業協會（SEMI）執行長馬諾查（Ajit Manocha）今天表示，東南亞國家應致力在十年內興建更多半導體晶圓廠，以協助產業分散並降低供應風險。 路透社報導，馬諾查在吉隆坡產業論壇指出，預估到2029年，亞洲</p>
       </div>
 
       <div class="news-card news-green">
         <div class="news-imp-tag imp-green">🟢 一般</div>
-        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_18805c85-07ed-4153-ada2-b4b493c59e32" target="_blank" class="news-title">盧瑟妃、Meta命理俊《Decode Your Fate解讀你的天機》6月7日親自來臺會粉絲</a>
+        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_6e7baead-0197-409e-aeb0-3b82b70f0bdf" target="_blank" class="news-title">《大愛街2巷》5月14日幸福開張！金鐘視后吳奕蓉變身麗髮院「米蘭達」</a>
         <div class="news-meta">
           <span class="news-source">Yahoo Entertainment</span>
           <span class="news-time">05/05 08:00</span>
         </div>
-        <p class="news-desc">記者周毓／臺北報導 韓國實境節目《天機試煉場》播出後在亞洲掀起命理話題，節目中多位命理師人氣飆升。八大電視今（5）日宣布，將於6月7日舉辦《Decode Your Fate解讀你的天機》臺北粉絲見面會，邀請節目中表現亮眼</p>
+        <p class="news-desc">記者周毓洵／臺北報導 全新大愛劇《大愛街2巷》將於5月14日正式開播，主打溫馨幽默的情境喜劇風格，集結吳奕蓉、侯彥西、嚴正嵐、柯素雲、夏靖庭、李維維與李辰翔等實力派卡司，於首波媒體茶敘中分享拍攝趣事與角色設定。其中，金鐘</p>
       </div>
 
       <div class="news-card news-green">
         <div class="news-imp-tag imp-green">🟢 一般</div>
-        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_93e5dd2d-fe7e-4a24-8228-af8f77cbb997" target="_blank" class="news-title">SelectUSA Tech新創競賽 台灣選手大放異彩</a>
+        <a href="https://www.inside.com.tw/article/41220-nvidia-s-jensen-huang-says-china-should-not-have-its-most-advanced-chips" target="_blank" class="news-title">黃仁勳稱中國不應獲 NVIDIA 最先進晶片</a>
         <div class="news-meta">
-          <span class="news-source">Yahoo Entertainment</span>
+          <span class="news-source">Inside.com.tw</span>
           <span class="news-time">05/05 08:00</span>
         </div>
-        <p class="news-desc">記者郭曉蓓／臺北報導 經濟部帶領37家臺灣新創企業赴美參加2026年「選擇美國投資高峰會」新創競賽(SelectUSA Tech)，美東時間5月4日競賽結果大放異彩，共取得一金三銀一銅的佳績，成績為全球之首。 經濟部說明</p>
+        <p class="news-desc">黃仁勳被問到中國是否應該擁有最新、最先進的晶片時回說「不應該」，並說美國應維持 AI 領先優勢。</p>
       </div>
 
       <div class="news-card news-green">
         <div class="news-imp-tag imp-green">🟢 一般</div>
-        <a href="https://tw.news.yahoo.com/%E5%B7%A6%E5%AA%92%E7%B4%90%E7%B4%84%E6%99%82%E5%A0%B1%E7%AB%9F%E8%A2%AB%E6%8C%87%E6%8E%A7-%E6%AD%A7%E8%A6%96-%E7%BE%8E%E8%81%AF%E9%82%A6%E6%94%BF%E5%BA%9C%E6%A9%9F%E6%A7%8B%E6%93%AC%E6%8F%90%E8%B5%B7%E6%B0%91%E6%AC%8A%E8%A8%B4%E8%A8%9F-094330284.html" target="_blank" class="news-title">左媒紐約時報竟被指控「歧視」 美聯邦政府機構擬提起民權訴訟</a>
+        <a href="https://www.dailymail.com/news/article-15791335/Putin-memes-paranoia-military-parade-drone-attack-mobile-internet-connection-Moscow.html" target="_blank" class="news-title">Putin is mocked with hilarious social media memes for his paranoia over military parade drone attack after cutting off mobile internet connection in Moscow</a>
         <div class="news-meta">
-          <span class="news-source">Yahoo Entertainment</span>
+          <span class="news-source">Dailymail.com</span>
           <span class="news-time">05/05 08:00</span>
         </div>
-        <p class="news-desc">美國聯邦政府機構「平等就業機會委員會」（EEOC）正準備對《紐約時報》（The New York Times）提起民權訴訟。此案源於一名白人男性員工提出的「反向歧視」指控，該員工聲稱其種族與性別成為升遷受阻的主因。根據《</p>
+        <p class="news-desc">Vladimir Putin is being ridiculed on social media for his paranoia over a potential Ukrainian drone attack.</p>
       </div>
 
       <div class="news-card news-green">
         <div class="news-imp-tag imp-green">🟢 一般</div>
-        <a href="https://www.secretchina.com/news/gb/2026/05/05/1098689.html" target="_blank" class="news-title">21人共挤6人车 辽宁丹东重大车祸8死13伤(图)</a>
+        <a href="https://pypi.org/project/agloom/0.1.27/" target="_blank" class="news-title">agloom 0.1.27</a>
         <div class="news-meta">
-          <span class="news-source">Secretchina.com</span>
+          <span class="news-source">Pypi.org</span>
           <span class="news-time">05/05 08:00</span>
         </div>
-        <p class="news-desc">日前，中国辽宁省丹东市发生一起严重交通事故，造成至少8人死亡、13人受伤。车内人员主要为蓝莓采摘工人。 新闻 辽宁 - 看中国》是总部设于美国、以复兴传统中华文化为理念的独立媒体。自2001年起，坚持报导最新社会焦点和传</p>
-      </div>
-
-      <div class="news-card news-green">
-        <div class="news-imp-tag imp-green">🟢 一般</div>
-        <a href="https://tw.news.yahoo.com/semi-%E6%9D%B1%E5%8D%97%E4%BA%9E%E6%87%89%E6%93%B4%E5%BC%B5%E5%8D%8A%E5%B0%8E%E9%AB%94%E7%94%9F%E7%94%A2-%E4%BB%A5%E5%88%A9%E7%94%A2%E6%A5%AD%E5%88%86%E6%95%A3%E9%99%8D%E9%A2%A8%E9%9A%AA-091417795.html" target="_blank" class="news-title">SEMI：東南亞應擴張半導體生產 以利產業分散降風險</a>
-        <div class="news-meta">
-          <span class="news-source">Yahoo Entertainment</span>
-          <span class="news-time">05/05 08:00</span>
-        </div>
-        <p class="news-desc">（中央社吉隆坡5日綜合外電報導）國際半導體產業協會（SEMI）執行長馬諾查（Ajit Manocha）今天表示，東南亞國家應致力在未來10年興建更多半導體晶圓廠，以協助產業分散並降低供應風險。</p>
-      </div>
-
-      <div class="news-card news-green">
-        <div class="news-imp-tag imp-green">🟢 一般</div>
-        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_61471232-9999-45e0-89fd-dad854540ce4" target="_blank" class="news-title">東南亞半導體展大馬登場 穎崴秀AI解決方案 (圖)</a>
-        <div class="news-meta">
-          <span class="news-source">Yahoo Entertainment</span>
-          <span class="news-time">05/05 08:00</span>
-        </div>
-        <p class="news-desc">東南亞半導體展（SEMICON SEA 2026）5日起在馬來西亞吉隆坡登場，測試介面廠穎崴現場展出AI plus全方位解決方案。 （穎崴提供） 中央社記者鍾榮峰傳真 115年5月5日</p>
-      </div>
-
-      <div class="news-card news-green">
-        <div class="news-imp-tag imp-green">🟢 一般</div>
-        <a href="https://tw.stock.yahoo.com/news/%E4%BD%8E%E8%BB%8C%E8%A1%9B%E6%98%9F%E7%81%AB%E7%86%B1%E5%8D%87%E7%A9%BA-%E8%81%AF%E7%99%BC%E7%A7%91%E5%99%B4%E5%A4%A9%E5%83%B9%E7%89%BD4%E6%AA%94%E6%91%98%E7%B4%85%E7%87%88-%E9%B4%BB%E6%B5%B7%E5%BC%B7%E5%BD%885-%E6%95%A3%E7%86%B1%E5%A4%A7%E5%BB%A0-%E7%BF%BB%E8%87%89%E6%91%94%E5%8D%8A%E6%A0%B9-084000263.html" target="_blank" class="news-title">低軌衛星火熱升空！聯發科噴天價牽4檔摘紅燈、鴻海強彈5% 「散熱大廠」翻臉摔半根</a>
-        <div class="news-meta">
-          <span class="news-source">Yahoo Entertainment</span>
-          <span class="news-time">05/05 08:00</span>
-        </div>
-        <p class="news-desc">[FTNN新聞網]記者江佳蓉／綜合報導台股加權指數今（5）日終場小漲64.15點，以40,769.29點作收，續創歷史收盤新高，漲幅0.16%，低軌衛星族群集體勁揚，群創（3...</p>
-      </div>
-
-      <div class="news-card news-green">
-        <div class="news-imp-tag imp-green">🟢 一般</div>
-        <a href="https://tw.stock.yahoo.com/news/%E5%8F%B0%E7%A9%8D%E9%9B%BB%E9%9C%B8%E6%AC%8A%E4%B8%8D%E4%BF%9D-%E8%98%8B%E6%9E%9C%E5%82%B3%E8%88%872%E4%BC%81%E6%A5%AD%E8%AB%87-%E5%9C%A8%E7%BE%8E%E7%94%9F%E7%94%A2%E6%99%B6%E7%89%87-083533430.html" target="_blank" class="news-title">台積電霸權不保？蘋果傳與2企業談「在美生產晶片」</a>
-        <div class="news-meta">
-          <span class="news-source">Yahoo Entertainment</span>
-          <span class="news-time">05/05 08:00</span>
-        </div>
-        <p class="news-desc">財經中心／綜合報導全球半導體版圖傳出震盪！長期高度依賴台積電（TSMC）代工處理器的蘋果公司（Apple），近日傳出正積極尋求代工來源多元化。有外媒指出，蘋果已分別與英特爾（Intel）及三星電子（Samsung）進行初</p>
-      </div>
-
-      <div class="news-card news-green">
-        <div class="news-imp-tag imp-green">🟢 一般</div>
-        <a href="https://tw.news.yahoo.com/%E5%8D%93%E6%A6%AE%E6%B3%B0-%E6%98%8E%E5%B9%B4%E7%B8%BD%E9%A0%90%E7%AE%97-%E4%B8%AD%E5%B0%8F%E5%BE%AE%E4%BC%81%E6%A5%AD-%E8%88%87-%E7%A4%BE%E7%A6%8F%E7%85%A7%E9%A1%A7-083246339.html" target="_blank" class="news-title">卓榮泰：明年總預算「中小微企業」與「社福照顧」並重</a>
-        <div class="news-meta">
-          <span class="news-source">Yahoo Entertainment</span>
-          <span class="news-time">05/05 08:00</span>
-        </div>
-        <p class="news-desc">行政院長卓榮泰關心台中市中小企業發展，今（5）日下午參訪大雅區千里眼精密部件公司，了解企業導入AI智慧製造、提升製程效率，並跨足半導體、航太、醫療、機器人及軍工產業等轉型成果，舉行產業座談交流，談及明年總預算將朝「中小企</p>
-      </div>
-
-      <div class="news-card news-green">
-        <div class="news-imp-tag imp-green">🟢 一般</div>
-        <a href="https://tw.news.yahoo.com/%E4%B8%8D%E6%98%8E%E5%8E%9F%E5%9B%A0%E9%80%A3%E7%92%B0%E7%87%92-%E4%BC%8A%E6%9C%97%E6%B8%AF%E5%8F%A3%E9%A9%9A%E5%82%B3%E5%A4%B1%E7%81%AB-%E8%87%B3%E5%B0%914%E8%89%98%E5%95%86%E8%88%B9%E6%B7%AA%E9%99%B7-081845772.html" target="_blank" class="news-title">不明原因連環燒…伊朗港口驚傳失火 至少4艘商船淪陷</a>
-        <div class="news-meta">
-          <span class="news-source">Yahoo Entertainment</span>
-          <span class="news-time">05/05 08:00</span>
-        </div>
-        <p class="news-desc">半島電視台引述伊朗國營媒體報導，伊朗南部港口5日多艘船隻不明原因起火。 伊朗半官方媒體梅爾通訊社（Mehr）報導，南部達耶爾港（Dayyer）碼頭多艘商船起火，起火原因尚不清楚。 港口消防部門主管奧姆拉尼（Majid O</p>
-      </div>
-
-      <div class="news-card news-green">
-        <div class="news-imp-tag imp-green">🟢 一般</div>
-        <a href="https://www.globenewswire.com/news-release/2026/05/05/3287432/0/en/Wall-Street-Veteran-Jason-Paltrowitz-Launches-Crossbridge-Advisors-LLC-an-independent-firm-built-to-close-the-U-S-valuation-gap-on-non-U-S-equities.html" target="_blank" class="news-title">Wall Street Veteran Jason Paltrowitz Launches Crossbridge Advisors LLC, an independent firm built to close the U.S. valuation gap on non-U.S. equities</a>
-        <div class="news-meta">
-          <span class="news-source">GlobeNewswire</span>
-          <span class="news-time">05/05 08:00</span>
-        </div>
-        <p class="news-desc">Ex–OTC Markets EVP Jason Paltrowitz launches Crossbridge Advisors to help non-U.S. issuers access U.S. investo</p>
-      </div>
-
-      <div class="news-card news-green">
-        <div class="news-imp-tag imp-green">🟢 一般</div>
-        <a href="https://www.wired.com/story/he-couldnt-land-a-job-interview-was-ai-to-blame/" target="_blank" class="news-title">He Couldn’t Land a Job Interview. Was AI to Blame?</a>
-        <div class="news-meta">
-          <span class="news-source">Wired</span>
-          <span class="news-time">05/05 08:00</span>
-        </div>
-        <p class="news-desc">Armed with some Python and a white-hot sense of injustice, one medical student spent six months trying to figu</p>
+        <p class="news-desc">The intelligent fabric for AI agents — 9 execution patterns, auto-classified, self-learning, production-ready.</p>
       </div>
     </div>
   </section>
@@ -1541,5 +1553,21 @@
   資料僅供參考，不構成投資建議
 </footer>
 
+<script>
+(function(){
+  var days=["星期日","星期一","星期二","星期三","星期四","星期五","星期六"];
+  function pad(n){return String(n).padStart(2,"0");}
+  function tick(){
+    var now=new Date();
+    var h=pad(now.getHours()),m=pad(now.getMinutes()),s=pad(now.getSeconds());
+    var y=now.getFullYear(),mo=pad(now.getMonth()+1),d=pad(now.getDate());
+    var wd=days[now.getDay()];
+    document.getElementById("lc-time").textContent=h+":"+m+":"+s;
+    document.getElementById("lc-date").textContent=y+"/"+mo+"/"+d+" "+wd;
+  }
+  tick();
+  setInterval(tick,1000);
+})();
+</script>
 </body>
 </html>
