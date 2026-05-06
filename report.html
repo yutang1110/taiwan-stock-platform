@@ -48,10 +48,12 @@
                 padding:4px 12px; border-radius:20px; white-space:nowrap; }
     .upd-time strong { color:var(--acc2); }
     .hdr-right { display:flex; align-items:center; gap:12px; flex-wrap:wrap; justify-content:flex-end; }
-    .live-clock-wrap { text-align:right; }
-    .live-clock { font-size:1.5rem; font-weight:700; color:var(--acc2);
-                  font-variant-numeric:tabular-nums; letter-spacing:.04em; line-height:1.1; }
-    .live-date  { font-size:.7rem; color:var(--sub); margin-top:2px; }
+    .clock-bar  { display:flex; align-items:center; justify-content:center; gap:18px;
+                  padding:6px 0 10px; border-top:1px solid rgba(255,255,255,.06); margin-top:8px; }
+    .live-clock { font-size:2rem; font-weight:800; color:var(--acc2);
+                  font-variant-numeric:tabular-nums; letter-spacing:.08em;
+                  text-shadow:0 0 18px rgba(33,150,243,.5); }
+    .live-date  { font-size:.85rem; color:#90a4ae; letter-spacing:.05em; }
 
     /* ── Indices strip ── */
     .idx-strip { display:flex; gap:0; overflow-x:auto; border-top:1px solid var(--border);
@@ -231,12 +233,12 @@
       <h1>台灣證券 <span>重大事件</span> 及股價波動平台</h1>
     </div>
     <div class="hdr-right">
-      <div class="upd-time">最後更新：<strong>2026年05月06日 19:54:35</strong></div>
-      <div class="live-clock-wrap">
-        <div class="live-clock" id="lc-time">--:--:--</div>
-        <div class="live-date"  id="lc-date">載入中...</div>
-      </div>
+      <div class="upd-time">最後更新：<strong>2026年05月06日 20:02:11</strong></div>
     </div>
+  </div>
+  <div class="clock-bar">
+    <div class="live-date" id="lc-date">載入中...</div>
+    <div class="live-clock" id="lc-time">--:--:--</div>
   </div>
   <div class="idx-strip">
     <div class="idx-item">
@@ -324,32 +326,22 @@
 
       <div class="news-card news-red">
         <div class="news-imp-tag imp-red">🔴 最重要</div>
-        <a href="https://www.tomshardware.com/tech-industry/artificial-intelligence/nvidia-ceo-jensen-huang-says-china-should-not-have-blackwell-or-rubin-ai-gpus-firmly-states-us-should-have-the-first-the-most-and-the-best-when-it-comes-to-ai-hardware" target="_blank" class="news-title">Nvidia CEO Jensen Huang says China should not have Blackwell or Rubin AI GPUs — firmly states US should have 'the first, the most, and the best' when it comes to AI hardware</a>
+        <a href="https://www.zdnet.com/home-and-office/home-entertainment/bose-lifestyle-ultra-lineup-announcement/" target="_blank" class="news-title">Bose's new home theater system is optimized for your various TV setups - but can it beat Sony?</a>
         <div class="news-meta">
-          <span class="news-source">Tom's Hardware UK</span>
+          <span class="news-source">ZDNet</span>
           <span class="news-time">05/05 08:00</span>
         </div>
-        <p class="news-desc">Nvidia's Jensen Huang reiterates that American companies should be able to ship their products globally, but m</p>
+        <p class="news-desc">Bose's Lifestyle Ultra lineup consists of three new products, and software is both one of their greatest benef</p>
       </div>
 
       <div class="news-card news-red">
         <div class="news-imp-tag imp-red">🔴 最重要</div>
-        <a href="https://slashdot.org/firehose.pl?op=view&amp;id=183131450" target="_blank" class="news-title">New frontier of AI forces Trump's heavy hand - Axios</a>
+        <a href="https://siliconangle.com/2026/05/05/dyna-software-launches-platform-copilot-agentic-ai-tool-configuring-servicenow/" target="_blank" class="news-title">Dyna Software launches Platform Copilot, an agentic AI tool for configuring ServiceNow</a>
         <div class="news-meta">
-          <span class="news-source">Slashdot.org</span>
+          <span class="news-source">SiliconANGLE News</span>
           <span class="news-time">05/05 08:00</span>
         </div>
-        <p class="news-desc">New frontier of AI forces Trump's heavy handAxios White House Considers Vetting A.I. Models Before They Are Re</p>
-      </div>
-
-      <div class="news-card news-red">
-        <div class="news-imp-tag imp-red">🔴 最重要</div>
-        <a href="https://www.cartoonbrew.com/awards/view-conference-trailblazer-award-2026-260567.html" target="_blank" class="news-title">View Conference’s New Trailblazer Award Honors 15 Women From Across The Motion Picture Industry</a>
-        <div class="news-meta">
-          <span class="news-source">Cartoon Brew</span>
-          <span class="news-time">05/05 08:00</span>
-        </div>
-        <p class="news-desc">Italy's annual animation and VFX gathering will honor 15 women across directing, cinematography, production de</p>
+        <p class="news-desc">Dyna Software Inc., a company that provides platform governance and health provider for ServiceNow Inc.,  toda</p>
       </div>
 
       <div class="news-card news-yellow">
@@ -495,16 +487,6 @@
 
       <div class="news-card news-green">
         <div class="news-imp-tag imp-green">🟢 一般</div>
-        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_6e7baead-0197-409e-aeb0-3b82b70f0bdf" target="_blank" class="news-title">《大愛街2巷》5月14日幸福開張！金鐘視后吳奕蓉變身麗髮院「米蘭達」</a>
-        <div class="news-meta">
-          <span class="news-source">Yahoo Entertainment</span>
-          <span class="news-time">05/05 08:00</span>
-        </div>
-        <p class="news-desc">記者周毓洵／臺北報導 全新大愛劇《大愛街2巷》將於5月14日正式開播，主打溫馨幽默的情境喜劇風格，集結吳奕蓉、侯彥西、嚴正嵐、柯素雲、夏靖庭、李維維與李辰翔等實力派卡司，於首波媒體茶敘中分享拍攝趣事與角色設定。其中，金鐘</p>
-      </div>
-
-      <div class="news-card news-green">
-        <div class="news-imp-tag imp-green">🟢 一般</div>
         <a href="https://www.inside.com.tw/article/41220-nvidia-s-jensen-huang-says-china-should-not-have-its-most-advanced-chips" target="_blank" class="news-title">黃仁勳稱中國不應獲 NVIDIA 最先進晶片</a>
         <div class="news-meta">
           <span class="news-source">Inside.com.tw</span>
@@ -515,22 +497,42 @@
 
       <div class="news-card news-green">
         <div class="news-imp-tag imp-green">🟢 一般</div>
-        <a href="https://www.dailymail.com/news/article-15791335/Putin-memes-paranoia-military-parade-drone-attack-mobile-internet-connection-Moscow.html" target="_blank" class="news-title">Putin is mocked with hilarious social media memes for his paranoia over military parade drone attack after cutting off mobile internet connection in Moscow</a>
+        <a href="https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_6e7baead-0197-409e-aeb0-3b82b70f0bdf" target="_blank" class="news-title">《大愛街2巷》5月14日幸福開張！金鐘視后吳奕蓉變身麗髮院「米蘭達」</a>
         <div class="news-meta">
-          <span class="news-source">Dailymail.com</span>
+          <span class="news-source">Yahoo Entertainment</span>
           <span class="news-time">05/05 08:00</span>
         </div>
-        <p class="news-desc">Vladimir Putin is being ridiculed on social media for his paranoia over a potential Ukrainian drone attack.</p>
+        <p class="news-desc">記者周毓洵／臺北報導 全新大愛劇《大愛街2巷》將於5月14日正式開播，主打溫馨幽默的情境喜劇風格，集結吳奕蓉、侯彥西、嚴正嵐、柯素雲、夏靖庭、李維維與李辰翔等實力派卡司，於首波媒體茶敘中分享拍攝趣事與角色設定。其中，金鐘</p>
       </div>
 
       <div class="news-card news-green">
         <div class="news-imp-tag imp-green">🟢 一般</div>
-        <a href="https://pypi.org/project/agloom/0.1.27/" target="_blank" class="news-title">agloom 0.1.27</a>
+        <a href="https://www.businessinsider.com/harvey-ceo-ai-agents-transforming-legal-industry-dynamics-2026-5" target="_blank" class="news-title">Harvey's CEO says AI agents are picking up more work that human lawyers used to do</a>
         <div class="news-meta">
-          <span class="news-source">Pypi.org</span>
+          <span class="news-source">Business Insider</span>
           <span class="news-time">05/05 08:00</span>
         </div>
-        <p class="news-desc">The intelligent fabric for AI agents — 9 execution patterns, auto-classified, self-learning, production-ready.</p>
+        <p class="news-desc">Harvey's CEO says as AI agents take on more work, firms might put fewer lawyers on each case. That doesn't mea</p>
+      </div>
+
+      <div class="news-card news-green">
+        <div class="news-imp-tag imp-green">🟢 一般</div>
+        <a href="https://www.globenewswire.com/news-release/2026/05/05/3287642/0/en/Voice-Actors-Head-to-Washington-to-Address-AI-s-Impact-on-Creative-Economy.html" target="_blank" class="news-title">Voice Actors Head to Washington to Address AI’s Impact on Creative Economy</a>
+        <div class="news-meta">
+          <span class="news-source">GlobeNewswire</span>
+          <span class="news-time">05/05 08:00</span>
+        </div>
+        <p class="news-desc">Approximately 21 percent of voice actors reported losing work directly to AI in a survey conducted this year, </p>
+      </div>
+
+      <div class="news-card news-green">
+        <div class="news-imp-tag imp-green">🟢 一般</div>
+        <a href="https://www.exchangewire.com/blog/2026/05/05/digest-openai-lays-groundwork-for-chatgpt-ads-in-eu-blackstone-hf-goldman-back-ai-venture-musk-settles-twitter-lawsuit-paying-1-5m/" target="_blank" class="news-title">Digest: OpenAI Lays Groundwork For ChatGPT Ads in EU; Blackstone, H&amp;F, Goldman Back AI Venture; Musk Settles Twitter Lawsuit Paying $1.5m</a>
+        <div class="news-meta">
+          <span class="news-source">ExchangeWire</span>
+          <span class="news-time">05/05 08:00</span>
+        </div>
+        <p class="news-desc">In today’s Digest, we cover OpenAI laying the groundwork for ChatGPT ads in the EU and sharing user data with </p>
       </div>
     </div>
   </section>
